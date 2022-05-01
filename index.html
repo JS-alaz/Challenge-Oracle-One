@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <img class="logo-uno" src="/imagenes/Logo-1.png" alt="imagen de la letra a como logo de Alura">
+    <main>
+        <div class="texto-in"><!-- contene el texto que se ingresa y los botones -->
+            <textarea name="noname" class="input-text-in" class="recibe-texto"   cols="30" rows="30" placeholder="Ingrese el texto aqui"></textarea>
+            <span>
+                    <svg style="width:16px;height:16px" viewBox="0 0 24 24">
+                        <path fill="#495057" d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>Solo letras minúsculas y sin ascentos
+            </span>          
+            <div class="btns-e-d"><!-- contiene los botones  -->
+                <button class="btn">Encriptar</button>
+                <button class="btn" id="btnDesencriptar">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="text-out"><!-- contiene el codigo desencriptado y el boton copiar -->
+            <p class="res"></p><!-- aca se muestra el codigo desencriptado -->
+            <img class='figure' src="/imagenes/Muñeco.png" alt="">
+            <h2 class="not-found">Ningun mensaje fue encontrado</h2>
+            <p class="next-to-notfound">Ingresa el texo que desees encriptar o desencriptar.</p>
+            <button class="btn-copiar">Copiar</button>
+        </div>
+    </main>
+    <script src="desencriptar.js"></script>
+    <script src="encriptar.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
