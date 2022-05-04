@@ -15,11 +15,11 @@
     <img class="logo-uno" src="imagenes/Logo-1.png" alt="imagen de la letra a como logo de Alura">
     <main>
         <div class="texto-in"><!-- contene el texto que se ingresa y los botones -->
-            <textarea name="noname" class="input-text-in" class="recibe-texto"   cols="30" rows="30" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea  name="noname" class="input-text-in" class="recibe-texto"   cols="30" rows="30" placeholder="Ingrese el texto aqui"></textarea><!-- onkeypress="soloLetras(event)" -->
             <span>
                     <svg style="width:16px;height:16px" viewBox="0 0 24 24">
                         <path fill="#495057" d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-                    </svg>Solo letras minúsculas y sin ascentos
+                    </svg>Solo letras minúsculas y sin acentos
             </span>          
             <div class="btns-e-d"><!-- contiene los botones  -->
                 <button class="btn">Encriptar</button>
@@ -29,12 +29,13 @@
 
         <div class="text-out"><!-- contiene el codigo desencriptado y el boton copiar -->
             <p class="res"></p><!-- aca se muestra el codigo desencriptado -->
-            <img class='figure' src="imagenes/Muñeco.png" alt="">
+            <img class='figure' src="imagenes/Muñeco.png" alt="Figura humana mirando a un diamante con una lupa">
             <h2 class="not-found">Ningun mensaje fue encontrado</h2>
             <p class="next-to-notfound">Ingresa el texo que desees encriptar o desencriptar.</p>
             <button class="btn-copiar">Copiar</button>
         </div>
     </main>
+    <script src="validacion.js"></script>
     <script src="desencriptar.js"></script>
     <script src="encriptar.js"></script>
     <script src="app.js"></script>
